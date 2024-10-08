@@ -24,19 +24,19 @@ website:
         contents: 
           - href: install.qmd
             text: 🛠️ Install R and RStudio
-          - href: workshop-materials.qmd
-            text: 📖 Workshop Materials
+          #- href: workshop-materials.qmd
+          #  text: 📖 Workshop Materials
           - href: using-files.qmd
             text: 📁 Using R files
-      - section: "🎓 R Dissertation workshops"
+      - section: "🎓 R workshops materials"
         contents:
-          - href: R_dissertation_1_first_steps.qmd
+          - href: R_1_first_steps.qmd
             text: 🎓 First steps with R
-          - href: R_dissertation_2_data_cleaning.qmd
+          - href: R_2_data_cleaning.qmd
             text: 🎓 Data cleaning
-          - href: R_dissertation_3_exploring_using_visualisation.qmd
+          - href: R_3_exploring_using_visualisation.qmd
             text: 🎓 Exploring data using visualisation
-          - href: R_dissertation_4_data_analysis.qmd
+          - href: R_4_data_analysis.qmd
             text: 🎓 Data analysis
       - section: "❓ Other information"
         contents: 

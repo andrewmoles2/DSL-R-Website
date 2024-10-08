@@ -1,5 +1,5 @@
 ---
-title: "R Dissertation Masterclass 4: Data Analysis"
+title: "R 4: Data Analysis"
 author:
    - name: Andrew Moles
      affiliation: Learning Developer, Digital Skills Lab
@@ -55,7 +55,7 @@ You will also be given the opportunity to explore one of the example datasets pr
 
 -   To open a script you can either go to `File > New File > R Script` or use the keyboard shortcut `shift + command/control + N`.
 
--   To open a new R markdown file go to `File > New File > R Markdown`. When opening we recommend you change the title to `R_dissertation_4`. Then when the file is open we suggest deleting everything after line 6 or under the second `---`. You'll need to add your own headings using the `#` and add code cells using `option+command+i` on a Mac or `ctrl + alt + i` on a Windows machine.
+-   To open a new R markdown file go to `File > New File > R Markdown`. When opening we recommend you change the title to `R_4`. Then when the file is open we suggest deleting everything after line 6 or under the second `---`. You'll need to add your own headings using the `#` and add code cells using `option+command+i` on a Mac or `ctrl + alt + i` on a Windows machine.
 
 2)  Install the `broom`, `easystats`, and `stargazer` libraries which we will be using for reporting. **We recommend installing packages using the command line as you only need to install packages once**.
 
@@ -268,7 +268,7 @@ If you want to just look at the coefficients of the model we can use the `coeffi
 
 # Writing your results in a publication ready format
 
-We have done some analysis which is great, but we can also use R to get our results in a format to put into our dissertations!
+We have done some analysis which is great, but we can also use R to get our results in a format to put into reports. 
 
 There are several options here which will vary in usefulness depending on your situation. We have recommended three below, but there are many other options.
 
@@ -333,6 +333,8 @@ stargazer(lm_mod_1, type = 'text', title = "IMD Decile regression results")
 ## Other options for making nice outputs for reports
 
 The options we have outlined above are just a few of the many options out there!
+
+One of my favourite packages for presenting descriptive and statistical models in R is the [modelsummary](https://modelsummary.com/){target="_blank"} package. It can output into multiple formats, depending on how you are writing your reports. 
 
 A good option for those who are writing reports that use APA referencing style is the [apaTables](https://dstanley4.github.io/apaTables/articles/apaTables.html){target="_blank"} package. A useful feature is the tables produced can be outputted in multiple different formats such as Word or LaTeX.
 
@@ -440,7 +442,7 @@ pokemon_types <- read.csv("https://raw.githubusercontent.com/andrewmoles2/pokemo
 
 # Next steps
 
-If you want to use something other than Microsoft Word to write your dissertation we recommend coming to our Introduction to LaTeX or Report Writing with Markdown workshops. These workshops use a more programmic style for writing reports that gets around the many issues you commonly face using MS Word to write longer documents like a dissertation! If you go for the Report Writing with Markdown workshop we can teach you how to write your analysis and your dissertation in one document for maximum efficiency.
+If you want to use something other than Microsoft Word to write your reports or dissertation we recommend coming to our Introduction to LaTeX or Report Writing with Markdown workshops. These workshops use a more programmic style for writing reports that gets around the many issues you commonly face using MS Word to write longer documents like a dissertation! If you go for the Report Writing with Markdown workshop we can teach you how to write your analysis and your dissertation in one document for maximum efficiency.
 
 Links to sign up or express interest in the courses are below.
 
@@ -448,10 +450,8 @@ Links to sign up or express interest in the courses are below.
 
 [Report Writing with Markdown](https://apps.lse.ac.uk/training-system/home/search?textFilter=latex&roleName=ALL_ROLES&trainingProviderId=&fromDate=date.struct&fromDate_day=&fromDate_month=&fromDate_year=&fromDate_datepicker=&toDate=date.struct&toDate_day=&toDate_month=&toDate_year=&toDate_datepicker=){target="_blank"}
 
-We are also offering [1-2-1 sessions](https://info.lse.ac.uk/current-students/digital-skills-lab/drop-in-sessions){target="_blank"} throughout the summer period which you can book through student hub.
-
 # Give us some feedback!
 
-We are always looking to improve and iterate our workshops. [Follow the link to give your feedback](https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Dissertation%Masterclass%1:%First%Steps%with%R&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmQlMirKFVtGiOGVMi85gqsBGvO89jqy2dKjMRuNyPMsuA?e=PlgY4u){target="_blank"}.
+We are always looking to improve and iterate our workshops. [Follow the link to give your feedback](https://lse.eu.qualtrics.com/jfe/form/SV_e4gllqd7FvmCNzo?coursename=R 4: Data analysis&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmRMMXp8aplMnglI2f2x6bMBUVmJWeug1VGXY87rtLUZ6w?e=tifpht){target="_blank"}.
 
 Solutions are available at the end of the survey. 

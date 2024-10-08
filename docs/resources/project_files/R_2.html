@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andrew moles">
 <meta name="dcterms.date" content="2024-05-07">
 
-<title>Learning R at the DSL - R_dissertation_3</title>
+<title>R_dissertation_2 – Learning R at the DSL</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,23 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/colourful_flora.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/colourful_flora.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 
-<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../../css/styles.css">
 
 
 
@@ -97,13 +97,13 @@ document.addEventListener("DOMContentLoaded", function() {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">R_dissertation_3</li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">R_dissertation_2</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/DigitalSkillsLab.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/DigitalSkillsLab.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
@@ -134,22 +134,22 @@ document.addEventListener("DOMContentLoaded", function() {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">📚 Information</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🏠 Home</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../whyR.html" class="sidebar-item-text sidebar-link">
+  <a href="../../whyR.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">📊 Why learn R</span></a>
   </div>
 </li>
@@ -157,28 +157,22 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">💻 R workshops</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../install.html" class="sidebar-item-text sidebar-link">
+  <a href="../../install.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🛠️ Install R and RStudio</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshop-materials.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">📖 Workshop Materials</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../using-files.html" class="sidebar-item-text sidebar-link">
+  <a href="../../using-files.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">📁 Using R files</span></a>
   </div>
 </li>
@@ -186,34 +180,34 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">🎓 R Dissertation workshops</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">🎓 R workshops materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../R_dissertation_1_first_steps.html" class="sidebar-item-text sidebar-link">
+  <a href="../../R_1_first_steps.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎓 First steps with R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../R_dissertation_2_data_cleaning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../R_2_data_cleaning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎓 Data cleaning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../R_dissertation_3_exploring_using_visualisation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../R_3_exploring_using_visualisation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎓 Exploring data using visualisation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../R_dissertation_4_data_analysis.html" class="sidebar-item-text sidebar-link">
+  <a href="../../R_4_data_analysis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🎓 Data analysis</span></a>
   </div>
 </li>
@@ -221,22 +215,22 @@ document.addEventListener("DOMContentLoaded", function() {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">❓ Other information</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../../faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ℹ️ FAQ</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../example-page.html" class="sidebar-item-text sidebar-link">
+  <a href="../../example-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">🧪 R Testing Ground</span></a>
   </div>
 </li>
@@ -248,26 +242,34 @@ document.addEventListener("DOMContentLoaded", function() {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link active" data-scroll-target="#load-libraries">Load libraries</a></li>
-  <li><a href="#load-data" id="toc-load-data" class="nav-link" data-scroll-target="#load-data">Load data</a></li>
-  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary statistics</a></li>
-  <li><a href="#distributions" id="toc-distributions" class="nav-link" data-scroll-target="#distributions">Distributions</a></li>
-  <li><a href="#counts-and-rankings" id="toc-counts-and-rankings" class="nav-link" data-scroll-target="#counts-and-rankings">Counts and rankings</a></li>
-  <li><a href="#relationships-and-correlations" id="toc-relationships-and-correlations" class="nav-link" data-scroll-target="#relationships-and-correlations">Relationships and correlations</a></li>
-  <li><a href="#building-a-visualisation" id="toc-building-a-visualisation" class="nav-link" data-scroll-target="#building-a-visualisation">Building a visualisation</a></li>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
+  <ul>
+  <li><a href="#load-libraries" id="toc-load-libraries" class="nav-link" data-scroll-target="#load-libraries">load libraries</a></li>
+  <li><a href="#load-in-dataset" id="toc-load-in-dataset" class="nav-link" data-scroll-target="#load-in-dataset">load in dataset</a></li>
+  </ul></li>
+  <li><a href="#clean-your-data" id="toc-clean-your-data" class="nav-link" data-scroll-target="#clean-your-data">clean your data</a>
+  <ul>
+  <li><a href="#fix-height-and-weight-columns" id="toc-fix-height-and-weight-columns" class="nav-link" data-scroll-target="#fix-height-and-weight-columns">fix height and weight columns</a></li>
+  <li><a href="#make-new-columns-in-the-dataset-with-your-calculations-for-each-person-bmi-whr-blood-pressure" id="toc-make-new-columns-in-the-dataset-with-your-calculations-for-each-person-bmi-whr-blood-pressure" class="nav-link" data-scroll-target="#make-new-columns-in-the-dataset-with-your-calculations-for-each-person-bmi-whr-blood-pressure">make new columns in the dataset with your calculations for each person (BMI, WHR, Blood pressure)</a></li>
+  <li><a href="#rename-na-values-in-occupation-as-unemployed" id="toc-rename-na-values-in-occupation-as-unemployed" class="nav-link" data-scroll-target="#rename-na-values-in-occupation-as-unemployed">rename NA values in occupation as “unemployed”</a></li>
+  <li><a href="#add-bmi-and-whr-ranges" id="toc-add-bmi-and-whr-ranges" class="nav-link" data-scroll-target="#add-bmi-and-whr-ranges">add bmi and whr ranges</a></li>
+  <li><a href="#join-data-using-lsoa-information" id="toc-join-data-using-lsoa-information" class="nav-link" data-scroll-target="#join-data-using-lsoa-information">join data using lsoa information</a></li>
+  <li><a href="#tidy-up-columns" id="toc-tidy-up-columns" class="nav-link" data-scroll-target="#tidy-up-columns">tidy up columns</a></li>
+  </ul></li>
+  <li><a href="#writesave-data" id="toc-writesave-data" class="nav-link" data-scroll-target="#writesave-data">write/save data</a></li>
   </ul>
 </nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">R_dissertation_3</h1>
+<h1 class="title">R_dissertation_2</h1>
 </div>
 
 
@@ -296,26 +298,38 @@ document.addEventListener("DOMContentLoaded", function() {
 </header>
 
 
-<section id="load-libraries" class="level1">
-<h1>Load libraries</h1>
+<section id="setup" class="level1">
+<h1>Setup</h1>
+<section id="load-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-libraries">load libraries</h2>
 </section>
-<section id="load-data" class="level1">
-<h1>Load data</h1>
+<section id="load-in-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="load-in-dataset">load in dataset</h2>
 </section>
-<section id="summary-statistics" class="level1">
-<h1>Summary statistics</h1>
 </section>
-<section id="distributions" class="level1">
-<h1>Distributions</h1>
+<section id="clean-your-data" class="level1">
+<h1>clean your data</h1>
+<section id="fix-height-and-weight-columns" class="level2">
+<h2 class="anchored" data-anchor-id="fix-height-and-weight-columns">fix height and weight columns</h2>
 </section>
-<section id="counts-and-rankings" class="level1">
-<h1>Counts and rankings</h1>
+<section id="make-new-columns-in-the-dataset-with-your-calculations-for-each-person-bmi-whr-blood-pressure" class="level2">
+<h2 class="anchored" data-anchor-id="make-new-columns-in-the-dataset-with-your-calculations-for-each-person-bmi-whr-blood-pressure">make new columns in the dataset with your calculations for each person (BMI, WHR, Blood pressure)</h2>
 </section>
-<section id="relationships-and-correlations" class="level1">
-<h1>Relationships and correlations</h1>
+<section id="rename-na-values-in-occupation-as-unemployed" class="level2">
+<h2 class="anchored" data-anchor-id="rename-na-values-in-occupation-as-unemployed">rename NA values in occupation as “unemployed”</h2>
 </section>
-<section id="building-a-visualisation" class="level1">
-<h1>Building a visualisation</h1>
+<section id="add-bmi-and-whr-ranges" class="level2">
+<h2 class="anchored" data-anchor-id="add-bmi-and-whr-ranges">add bmi and whr ranges</h2>
+</section>
+<section id="join-data-using-lsoa-information" class="level2">
+<h2 class="anchored" data-anchor-id="join-data-using-lsoa-information">join data using lsoa information</h2>
+</section>
+<section id="tidy-up-columns" class="level2">
+<h2 class="anchored" data-anchor-id="tidy-up-columns">tidy up columns</h2>
+</section>
+</section>
+<section id="writesave-data" class="level1">
+<h1>write/save data</h1>
 
 
 </section>
@@ -356,18 +370,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -399,7 +402,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -407,7 +432,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

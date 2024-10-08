@@ -1,5 +1,5 @@
 ---
-title: "R Dissertation Masterclass 1: First steps with R"
+title: "R 1: First steps with R"
 author:
    - name: Andrew Moles
      affiliation: Learning Developer, Digital Skills Lab
@@ -49,13 +49,13 @@ To get started you will need to follow the below steps:
 
 2)  Download the R script provided, which provides you with some structure. You can also use a R Markdown file if you prefer, which can be downloaded from the second button. 
 
-{{< downloadthis resources/R_dissertation_1.R label='Download R script file' dname=r_dissertation_1 icon=r-circle type=success >}}
+{{< downloadthis resources/R_1.R label='Download R script file' dname=r_1 icon=r-circle type=success >}}
 
-{{< downloadthis resources/R_dissertation_1.Rmd label='Download R markdown file' dname=r_dissertation_1 icon=r-circle type=success >}}
+{{< downloadthis resources/R_1.Rmd label='Download R markdown file' dname=r_1 icon=r-circle type=success >}}
 
 3)  Make a new folder on your computer and give it a meaningful name. Put your downloaded file in that new folder. 
 
-4)  Open the R Script `R_dissertation_1.R` or `R_dissertation_1.Rmd` file you downloaded.    
+4)  Open the R Script `R_1.R` or `R_1.Rmd` file you downloaded.    
 
 For help getting started using RStudio and either script or R Markdown files, we have [written a guide to help you out](https://andrewmoles2.github.io/DSL-R-Website/using-files.html){target="_blank"}. 
 
@@ -286,7 +286,7 @@ There is a best practice when naming variables, vectors, data frames, column nam
 
 # Give us some feedback!
 
-We are always looking to improve and iterate our workshops. [Follow the link to give your feedback](https://lse.eu.qualtrics.com/jfe/form/SV_6eSrOVWuit28qcS?coursename=R%Dissertation%Masterclass%1:%First%Steps%with%R&topic=R&prog=DS&version=23-24&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmQlMirKFVtGiOGVMi85gqsBGvO89jqy2dKjMRuNyPMsuA?e=PlgY4u){target="_blank"}.
+We are always looking to improve and iterate our workshops. [Follow the link to give your feedback](https://lse.eu.qualtrics.com/jfe/form/SV_e4gllqd7FvmCNzo?coursename=R 1: First Steps with R&topic=R&prog=DS&version=24-25&link=https://lsecloud.sharepoint.com/:f:/s/TEAM_APD-DSL-Digital-Skills-Trainers/EmQlMirKFVtGiOGVMi85gqsBGvO89jqy2dKjMRuNyPMsuA?e=PlgY4u){target="_blank"}.
 
 Solutions are available at the end of the survey. 
 
