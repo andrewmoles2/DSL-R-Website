@@ -1,0 +1,60 @@
+---
+title: "R half-way individual challenge"
+author:
+   - name: Andrew Moles
+     affiliation: Learning Developer, Digital Skills Lab
+date: today
+#format:
+#  html:
+#    toc: true
+#    toc-depth: 4
+#    toc-location: left
+    #toc-expand: false
+#    code-fold: false
+#    keep-md: false
+#    embed-resources: true
+#    number-sections: true
+#    smooth-scroll: true
+#    mainfont: roboto
+#theme: 
+#  - flatly
+#  - css/roboto.css
+#title-block-banner: "#15BC9B"
+#title-block-banner-color: "#000508"
+#css: css/styles.css
+---
+
+# Knowledge check
+
+After you have completed `R 2: Data Cleaning`, have a go at our knowledge check. 
+
+You will be given a challenge with no steps or information provided on how to reach the goal. You will have to use the knowledge you have gained from the previous worksheets to complete it. 
+
+# The challenge
+
+Using data from the [HESA website](https://www.hesa.ac.uk/data-and-analysis/students){target='_blank'}, which has been prepared for you, replicate the output below. 
+
+```{r}
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(janitor)
+
+he_subjects <- read_csv('https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv') %>%
+  clean_names()
+
+he_subjects %>%
+  mutate(lse = ifelse(he_provider == "London School of Economics and Political Science", "LSE", "Other universities")) %>%
+  group_by(subject_areas, lse) %>%
+  summarise(avg_students_per_year = mean(n_students, na.rm = TRUE)) %>%
+  arrange(desc(subject_areas))
+```
+
+The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 and 2023/2024.
+
+The data can be loaded into R using the following URL: `https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv`
+
+We recommend you open a new R Markdown or R Script for this challenge. 
+
+

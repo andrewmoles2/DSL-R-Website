@@ -164,7 +164,7 @@ ggplot(health, aes(x = systolic_pressure)) +
   geom_histogram()
 ```
 
-
+<!--
 ## Side note about distributions and central limit theorm 
 
 Something to keep in mind when looking at distributions of data is central limit theorem, which tells us that if you have a large enough sample your data will always be normally distributed. To help understand this concept have a look at this [interactive explainer](http://mfviz.com/central-limit/){target="_blank"}.
@@ -194,6 +194,7 @@ hist(rnorm(5000))
 
 ::::
 
+-->
 
 
 # Distributions between groups

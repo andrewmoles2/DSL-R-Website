@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andrew Moles">
-<meta name="dcterms.date" content="2024-10-11">
+<meta name="dcterms.date" content="2025-06-05">
 
 <title>R 1: First steps with R – Learning R at the DSL</title>
 <style>
@@ -72,10 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-26fd4bad3d3e246cd60e13a70e337a0d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/downloadthis-1.9.1/downloadthis.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
@@ -167,7 +167,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 First steps with R</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./R_1_first_steps.html">💡 First steps with R</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -257,19 +257,25 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./R_1_first_steps.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">🎓 First steps with R</span></a>
+ <span class="menu-text">💡 First steps with R</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./R_2_data_cleaning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🎓 Data cleaning</span></a>
+ <span class="menu-text">💾 Data cleaning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mid_challenge.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🎬 Half-way individual challenge</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./R_3_exploring_using_visualisation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">🎓 Exploring data using visualisation</span></a>
+ <span class="menu-text">📊 Exploring data using visualisation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -326,7 +332,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 First steps with R</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./R_1_first_steps.html">💡 First steps with R</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">R 1: First steps with R</h1>
 </div>
@@ -352,7 +358,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 11, 2024</p>
+      <p class="date">June 5, 2025</p>
     </div>
   </div>
   
@@ -385,7 +391,7 @@ window.Quarto = {
 <li><p>Open RStudio.</p></li>
 <li><p>Download the R script provided, which provides you with some structure. You can also use a R Markdown file if you prefer, which can be downloaded from the second button.</p></li>
 </ol>
-<p><a href="#dnldts26286" onclick="fetch('data:text/plain;base64,IyBUaGlzIGlzIGEgY29tbWVudC4gTm90aWNlIHRoZSBoYXNodGFnCiMgc29tZSBleGFtcGxlIGNvZGUgdG8gaGVscCB5b3Ugb3V0CjEgKyAxCmEgPC0gNQpiIDwtIDIKYyA8LSBhICogYgoKIyBCTUkgY2FsY3VsYXRpb24gLS0tLQoKCiMgV2Fpc3QgdG8gSGlwIGNhbGN1bGF0aW9uIC0tLS0KCgojIFVzaW5nIHZhcmlhYmxlcyAtLS0tCgoKCiMgVXNpbmcgdmVjdG9ycyAtLS0tCgoKCiMgVXNpbmcgZGF0YSBmcmFtZXMgLS0tLQ==').then(res => res.blob()).then(blob => {
+<p><a href="#dnldts48754" onclick="fetch('data:text/plain;base64,IyBUaGlzIGlzIGEgY29tbWVudC4gTm90aWNlIHRoZSBoYXNodGFnCiMgc29tZSBleGFtcGxlIGNvZGUgdG8gaGVscCB5b3Ugb3V0CjEgKyAxCmEgPC0gNQpiIDwtIDIKYyA8LSBhICogYgoKIyBCTUkgY2FsY3VsYXRpb24gLS0tLQoKCiMgV2Fpc3QgdG8gSGlwIGNhbGN1bGF0aW9uIC0tLS0KCgojIFVzaW5nIHZhcmlhYmxlcyAtLS0tCgoKCiMgVXNpbmcgdmVjdG9ycyAtLS0tCgoKCiMgVXNpbmcgZGF0YSBmcmFtZXMgLS0tLQ==').then(res => res.blob()).then(blob => {
       const downloadURL = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
@@ -393,8 +399,8 @@ window.Quarto = {
       a.download = 'r_1.R'; a.click();
       window.URL.revokeObjectURL(downloadURL);
       document.body.removeChild(a);
-        });"><button class="btn btn-success downloadthis  " id="dnldts26286"><i class="bi bi-r-circle"></i> Download R script file </button></a></p>
-<p><a href="#dnldts49553" onclick="fetch('data:text/plain;base64,LS0tCnRpdGxlOiAiUl9kaXNzZXJ0YXRpb25fMSIKYXV0aG9yOiAiQW5kcmV3IG1vbGVzIgpkYXRlOiAiMjAyNC0wNS0wNyIKb3V0cHV0OiBodG1sX2RvY3VtZW50Ci0tLQoKIyMgRXhhbXBsZQoKQmVsb3cgYXJlIHNvbWUgZXhhbXBsZSBjb2RlIGZvciB5b3UgdG8gcnVuLiAKCmBgYHtyfQoxICsgMQpgYGAKCmBgYHtyfQphIDwtIDUKYiA8LSAyCmMgPC0gYSAqIGIKYGBgCgpOb3RlIHlvdSBjYW4gYWRkIHlvdXIgb3duIGNvZGUgY2VsbCB1c2luZyBvcHRpb24rY29tbWFuZCtpIG9uIGEgTWFjIG9yIGN0cmwgKyBhbHQgKyBpIG9uIGEgV2luZG93cyBtYWNoaW5lLiAKCiMjIEJNSSBjYWxjdWxhdGlvbiAKCmBgYHtyfQoKYGBgCgoKIyMgV2Fpc3QgdG8gSGlwIGNhbGN1bGF0aW9uIAoKYGBge3J9CgpgYGAKCgojIyBVc2luZyB2YXJpYWJsZXMgCgpgYGB7cn0KCmBgYAoKCiMjIFVzaW5nIHZlY3RvcnMgCgpgYGB7cn0KCmBgYAoKCiMjIFVzaW5nIGRhdGEgZnJhbWVzIAoKYGBge3J9CgpgYGAKCg==').then(res => res.blob()).then(blob => {
+        });"><button class="btn btn-success downloadthis  " id="dnldts48754"><i class="bi bi-r-circle"></i> Download R script file </button></a></p>
+<p><a href="#dnldts1634" onclick="fetch('data:text/plain;base64,LS0tCnRpdGxlOiAiUl9kaXNzZXJ0YXRpb25fMSIKYXV0aG9yOiAiQW5kcmV3IG1vbGVzIgpkYXRlOiAiMjAyNC0wNS0wNyIKb3V0cHV0OiBodG1sX2RvY3VtZW50Ci0tLQoKIyMgRXhhbXBsZQoKQmVsb3cgYXJlIHNvbWUgZXhhbXBsZSBjb2RlIGZvciB5b3UgdG8gcnVuLiAKCmBgYHtyfQoxICsgMQpgYGAKCmBgYHtyfQphIDwtIDUKYiA8LSAyCmMgPC0gYSAqIGIKYGBgCgpOb3RlIHlvdSBjYW4gYWRkIHlvdXIgb3duIGNvZGUgY2VsbCB1c2luZyBvcHRpb24rY29tbWFuZCtpIG9uIGEgTWFjIG9yIGN0cmwgKyBhbHQgKyBpIG9uIGEgV2luZG93cyBtYWNoaW5lLiAKCiMjIEJNSSBjYWxjdWxhdGlvbiAKCmBgYHtyfQoKYGBgCgoKIyMgV2Fpc3QgdG8gSGlwIGNhbGN1bGF0aW9uIAoKYGBge3J9CgpgYGAKCgojIyBVc2luZyB2YXJpYWJsZXMgCgpgYGB7cn0KCmBgYAoKCiMjIFVzaW5nIHZlY3RvcnMgCgpgYGB7cn0KCmBgYAoKCiMjIFVzaW5nIGRhdGEgZnJhbWVzIAoKYGBge3J9CgpgYGAKCg==').then(res => res.blob()).then(blob => {
       const downloadURL = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
@@ -402,7 +408,7 @@ window.Quarto = {
       a.download = 'r_1.Rmd'; a.click();
       window.URL.revokeObjectURL(downloadURL);
       document.body.removeChild(a);
-        });"><button class="btn btn-success downloadthis  " id="dnldts49553"><i class="bi bi-r-circle"></i> Download R markdown file </button></a></p>
+        });"><button class="btn btn-success downloadthis  " id="dnldts1634"><i class="bi bi-r-circle"></i> Download R markdown file </button></a></p>
 <ol start="3" type="1">
 <li><p>Make a new folder on your computer and give it a meaningful name. Put your downloaded file in that new folder.</p></li>
 <li><p>Open the R Script <code>R_1.R</code> or <code>R_1.Rmd</code> file you downloaded.</p></li>
@@ -713,8 +719,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -825,7 +829,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1052,7 +1055,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {
