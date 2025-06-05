@@ -32,11 +32,15 @@ You will be given a challenge with no steps or information provided on how to re
 
 # The challenge
 
-Using data from the [HESA website](https://www.hesa.ac.uk/data-and-analysis/students){target='_blank'}, which has been prepared for you, replicate the output below. 
+Using data from the [HESA website](https://www.hesa.ac.uk/data-and-analysis/students){target='_blank'}, which has been prepared for you, replicate the output below. You will need to: 
+
+- Make a new column with categories for LSE and Other universities  
+- Calculate the average number of students per year per subject area and if the university is LSE or not
 
 ```{r}
 #| message: false
 #| warning: false
+#| echo: false
 
 library(tidyverse)
 library(janitor)
@@ -44,11 +48,13 @@ library(janitor)
 he_subjects <- read_csv('https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv') %>%
   clean_names()
 
-he_subjects %>%
+per_year_agg <- he_subjects %>%
   mutate(lse = ifelse(he_provider == "London School of Economics and Political Science", "LSE", "Other universities")) %>%
   group_by(subject_areas, lse) %>%
   summarise(avg_students_per_year = mean(n_students, na.rm = TRUE)) %>%
   arrange(desc(subject_areas))
+
+per_year_agg
 ```
 
 The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 and 2023/2024.
