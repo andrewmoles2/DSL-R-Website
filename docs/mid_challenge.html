@@ -9,7 +9,7 @@
 <meta name="author" content="Andrew Moles">
 <meta name="dcterms.date" content="2025-06-05">
 
-<title>R half-way individual challenge – Learning R at the DSL</title>
+<title>R challenge: University subject analysis – Learning R at the DSL</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./mid_challenge.html">🎬 Half-way individual challenge</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./mid_challenge.html">🎬 R challenge</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mid_challenge.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">🎬 Half-way individual challenge</span></a>
+ <span class="menu-text">🎬 R challenge</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -260,9 +260,9 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./mid_challenge.html">🎬 Half-way individual challenge</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./R_1_first_steps.html">🎓 R workshops materials</a></li><li class="breadcrumb-item"><a href="./mid_challenge.html">🎬 R challenge</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">R half-way individual challenge</h1>
+<h1 class="title">R challenge: University subject analysis</h1>
 </div>
 
 
@@ -300,39 +300,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <section id="knowledge-check" class="level1">
 <h1>Knowledge check</h1>
-<p>After you have completed <code>R 2: Data Cleaning</code>, have a go at our knowledge check.</p>
-<p>You will be given a challenge with no steps or information provided on how to reach the goal. You will have to use the knowledge you have gained from the previous worksheets to complete it.</p>
+<p>Test your R skills developed from completing the first two worksheets. You are tasked with seeing how LSE compares to other universities in the number of students taking different subjects.</p>
+<p>Can you solve this coding challenge without support from a trainer, peers, or AI? Solely relying on the R techniques you have learned so far, and your web searching skills?</p>
+<p>Completing this project is the perfect way to test your learning!</p>
 </section>
 <section id="the-challenge" class="level1">
 <h1>The challenge</h1>
-<p>Using data from the <a href="https://www.hesa.ac.uk/data-and-analysis/students" target="_blank">HESA website</a>, which has been prepared for you, replicate the output below. You will need to:</p>
+<p>Your task is to write R code that provides you with a table comparing the average number of students by subject area and university (LSE versus other universities).</p>
+<p>You will need to:</p>
 <ul>
-<li>Make a new column with categories for LSE and Other universities<br>
-</li>
-<li>Calculate the average number of students per year per subject area and if the university is LSE or not</li>
+<li>Make a new column that has the following categories - <code>LSE</code> and <code>Other universities</code></li>
+<li>Calculate the average number of students by subject area and by the above category you made</li>
 </ul>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 44 × 3
-# Groups:   subject_areas [22]
-   subject_areas                                     lse   avg_students_per_year
-   &lt;chr&gt;                                             &lt;chr&gt;                 &lt;dbl&gt;
- 1 26 Geography, earth and environmental studies (s… LSE                   416. 
- 2 26 Geography, earth and environmental studies (s… Othe…                  83.2
- 3 26 Geography, earth and environmental studies (n… LSE                    66.2
- 4 26 Geography, earth and environmental studies (n… Othe…                 228. 
- 5 25 Design, and creative and performing arts       LSE                     0  
- 6 25 Design, and creative and performing arts       Othe…                1294. 
- 7 24 Media, journalism and communications           LSE                   424. 
- 8 24 Media, journalism and communications           Othe…                 329. 
- 9 23 Combined and general studies                   LSE                     0  
-10 23 Combined and general studies                   Othe…                 324. 
-# ℹ 34 more rows</code></pre>
-</div>
-</div>
-<p>The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 and 2023/2024.</p>
-<p>The data can be loaded into R using the following URL: <code>https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv</code></p>
-<p>We recommend you open a new R Markdown or R Script for this challenge.</p>
+<p>When you run your code it should load in your dataset, apply the above data preparation, and give you a table of the results. From your results you should be able to answer the following questions:</p>
+<ul>
+<li>Which subject area at LSE has the highest average number of students?<br>
+</li>
+<li>Which subject area at the other universities has the highest average number of students?</li>
+</ul>
+<p>The data can be loaded into R using the following URL: <code>https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv</code>.</p>
+<p>The data is from the <a href="https://www.hesa.ac.uk/data-and-analysis/students" target="_blank">HESA website</a>, which has been prepared for you. The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 to 2023/2024.</p>
+<p>We recommend you open a new R Markdown or R Script for this challenge by going to <code>File -&gt; New File -&gt;</code> and selecting Markdown or R Script. Be sure to save your work in the same folder as the rest of your code when you are done.</p>
 
 
 </section>

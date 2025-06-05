@@ -1,5 +1,5 @@
 ---
-title: "R half-way individual challenge"
+title: "R challenge: University subject analysis"
 author:
    - name: Andrew Moles
      affiliation: Learning Developer, Digital Skills Lab
@@ -26,21 +26,38 @@ date: today
 
 # Knowledge check
 
-After you have completed `R 2: Data Cleaning`, have a go at our knowledge check. 
+Test your R skills developed from completing the first two worksheets. You are tasked with seeing how LSE compares to other universities in the number of students taking different subjects. 
 
-You will be given a challenge with no steps or information provided on how to reach the goal. You will have to use the knowledge you have gained from the previous worksheets to complete it. 
+Can you solve this coding challenge without support from a trainer, peers, or AI? Solely relying on the R techniques you have learned so far, and your web searching skills?
+
+Completing this project is the perfect way to test your learning!
 
 # The challenge
 
-Using data from the [HESA website](https://www.hesa.ac.uk/data-and-analysis/students){target='_blank'}, which has been prepared for you, replicate the output below. You will need to: 
+Your task is to write R code that provides you with a table comparing the average number of students by subject area and university (LSE versus other universities). 
 
-- Make a new column with categories for LSE and Other universities  
-- Calculate the average number of students per year per subject area and if the university is LSE or not
+You will need to: 
 
-```{r}
+- Make a new column that has the following categories - `LSE` and `Other universities`
+- Calculate the average number of students by subject area and by the above category you made
+
+When you run your code it should load in your dataset, apply the above data preparation, and give you a table of the results. From your results you should be able to answer the following questions:
+
+- Which subject area at LSE has the highest average number of students?   
+- Which subject area at the other universities has the highest average number of students?
+
+The data can be loaded into R using the following URL: `https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv`. 
+
+The data is from the [HESA website](https://www.hesa.ac.uk/data-and-analysis/students){target='_blank'}, which has been prepared for you. The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 to 2023/2024.
+
+We recommend you open a new R Markdown or R Script for this challenge by going to `File -> New File ->` and selecting Markdown or R Script. Be sure to save your work in the same folder as the rest of your code when you are done. 
+
+
+```{r solution}
+#| eval: false
 #| message: false
 #| warning: false
-#| echo: false
+#| include: false
 
 library(tidyverse)
 library(janitor)
@@ -48,19 +65,16 @@ library(janitor)
 he_subjects <- read_csv('https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv') %>%
   clean_names()
 
-per_year_agg <- he_subjects %>%
+per_subject_agg <- he_subjects %>%
   mutate(lse = ifelse(he_provider == "London School of Economics and Political Science", "LSE", "Other universities")) %>%
   group_by(subject_areas, lse) %>%
   summarise(avg_students_per_year = mean(n_students, na.rm = TRUE)) %>%
-  arrange(desc(subject_areas))
+  arrange(desc(avg_students_per_year))
 
-per_year_agg
+per_subject_agg
+
+# validation to check how it calculated averages
+lse <- he_subjects %>%
+  filter(he_provider == "London School of Economics and Political Science")
 ```
-
-The dataset shows what subject areas students are doing at different universities. It covers academic years from 2014/2015 and 2023/2024.
-
-The data can be loaded into R using the following URL: `https://raw.githubusercontent.com/andrewmoles2/HE-students/refs/heads/main/data/he_subjects_20_24.csv`
-
-We recommend you open a new R Markdown or R Script for this challenge. 
-
 

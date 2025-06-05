@@ -35,7 +35,7 @@ website:
           - href: R_2_data_cleaning.qmd
             text: 💾 Data cleaning
           - href: mid_challenge.qmd
-            text: 🎬 Half-way individual challenge
+            text: 🎬 R challenge
           - href: R_3_exploring_using_visualisation.qmd
             text: 📊 Exploring data using visualisation
           - href: R_4_data_analysis.qmd
