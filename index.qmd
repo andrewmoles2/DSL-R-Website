@@ -24,7 +24,7 @@ This website provides and introduction to the R workshops run by the Digital Ski
 
 -   How to get started with the workshops materials
 
--   Materials for dissertation workshops
+-   Materials for R workshops
 
 -   Frequently asked questions about the workshops and R
 

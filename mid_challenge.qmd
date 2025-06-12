@@ -78,3 +78,9 @@ lse <- he_subjects %>%
   filter(he_provider == "London School of Economics and Political Science")
 ```
 
+# How do I know if got it right?
+
+Answer some questions in [this quiz](https://forms.office.com/e/W0t7pRQX9i) to test out if you got the expected outcome. 
+
+As a bonus, you will get our solution at the end of the quiz. 
+

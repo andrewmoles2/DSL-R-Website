@@ -208,7 +208,7 @@ We can still use a histogram here, and there is also the box plot which is used 
 What do you notice anything about the distributions? How does adding the location change how we see the data?
 
 ```{r dist-solution1, echo=FALSE, message=FALSE, warning=FALSE}
-#| column: body-inset
+#| column: body-outset
 #| layout-nrow: 2
 #| out-width: '60%'
 
@@ -247,7 +247,7 @@ When we look at the counts or ranks of categorical data we are trying to see if 
 **Your goal is to make two visualisations.** One is a basic bar plot of the `bmi_risk` column. The second looks at the `bmi_risk` column against the `sex` column. You should end up with visuals that look like the outputs below. 
 
 ```{r count-sol, echo=FALSE}
-#| column: body-inset
+#| column: body-outset
 #| layout-nrow: 1
 #| out-width: '70%'
 
